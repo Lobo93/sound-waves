@@ -1,0 +1,80 @@
+html {
+	height: 100%;
+}
+
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+	margin: 0;
+	text-align: center;
+	background-color: #e4e4e4;
+}
+
+.button-group {
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	gap: 40px;
+	max-width: 500px;
+}
+
+button {
+	display: flex;
+	justify-content: end;
+	align-items: end;
+	width: 120px;
+	height: 90px;
+	margin: 0;
+	padding: 5px 10px;
+	color: #aaa;
+	border: none;
+	outline: none;
+	box-shadow: 0 8px 32px #2222;
+	background: 0 20px / 56px repeat-x, #f4f4f4;
+	border-bottom: solid 4px #bbb;
+	box-sizing: content-box;
+	transition: border-width .2s ease-out, transform .2s ease-out;
+}
+
+button:active {
+	transform: translateY(1.5px);
+	border-width: 1px;
+	transition-duration: .02s, 3s;
+}
+
+.animated {
+	animation: animation .5s ease-out;
+}
+
+@keyframes animation {
+	from {
+		background-position-x: 0;
+	}
+
+	to {
+		background-position-x: 400%;
+	}
+}
+
+.sine {
+	background-image: url(images/sine.svg);
+}
+
+.triangle {
+	background-image: url(images/triangle.svg);
+}
+
+.square {
+	background-image: url(images/square.svg);
+}
+
+.sawtooth {
+	background-image: url(images/sawtooth.svg);
+}
+
+.noise {
+	background-image: url(images/noise.svg);
+}
